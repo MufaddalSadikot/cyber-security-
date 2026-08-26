@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+apps/web-dashboard/tsconfig.tsbuildinfo
+
+# Env
+.env
+.env.local
+*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

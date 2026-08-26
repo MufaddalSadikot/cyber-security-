@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "PVCC Agent — Privacy-Aware Visual Context Compiler",
+  "version": "1.0.0",
+  "description": "On-device perception, PII redaction and local action policy for browser agents (SIH26171).",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PVCC Agent"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "128": "icon128.png"
+  }
+}
