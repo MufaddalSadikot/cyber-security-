@@ -1,0 +1,21 @@
+{
+  "name": "@pvcc/browser-extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
+  "dependencies": {
+    "@pvcc/action-policy": "1.0.0",
+    "@pvcc/context-compiler": "1.0.0",
+    "@pvcc/privacy-engine": "1.0.0",
+    "@pvcc/shared": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "privacy-aware-visual-context-compiler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Privacy-Aware Visual Context Compiler — SIH26171 prototype (ISRO / Dept. of Space)",
+  "workspaces": [
+    "packages/*",
+    "apps/web-dashboard",
+    "apps/browser-extension"
+  ],
+  "scripts": {
+    "dev": "npm --workspace apps/web-dashboard run dev",
+    "build:web": "npm --workspace apps/web-dashboard run build",
+    "build:ext": "npm --workspace apps/browser-extension run build",
+    "typecheck": "npm --workspace apps/web-dashboard exec tsc -- --noEmit && npm --workspace apps/browser-extension exec tsc -- --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

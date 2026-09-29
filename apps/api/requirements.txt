@@ -1,0 +1,12 @@
+fastapi==0.141.1
+uvicorn[standard]==0.52.4
+sqlalchemy==2.0.52
+pydantic==2.13.4
+pydantic[email]
+bcrypt==5.0.0
+pyjwt==2.13.0
+python-multipart==0.0.32
+email-validator==2.3.0
+python-dotenv==1.2.3
+# For PostgreSQL deployments (not required for the default SQLite dev DB):
+# psycopg2-binary==2.9.9
